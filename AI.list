@@ -1,28 +1,61 @@
-# 内容 OpenAi Bard anthropic claude
+#
+# Rule for OpenAI / Bard / Claude
+# De-duplicated and Organized
+#
 
-# 域名关键字匹配
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
+# 域名关键字匹配 (Domain Keyword)
+# 匹配包含这些关键字的任何域名
+- DOMAIN-KEYWORD,anthropic
+- DOMAIN-KEYWORD,claude
+- DOMAIN-KEYWORD,openai
 
-# 域名后缀匹配
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai.com
+# 完整域名匹配 (Full Domain)
+# 仅精确匹配这些域名
+- DOMAIN,browser-intake-datadoghq.com
+- DOMAIN,chat.openai.com.cdn.cloudflare.net
+- DOMAIN,openai-api.arkoselabs.com
+- DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+- DOMAIN,openaicomproductionae4b.blob.core.windows.net
+- DOMAIN,production-openaicom-storage.azureedge.net
+- DOMAIN,static.cloudflareinsights.com
+
+# 域名后缀匹配 (Domain Suffix)
+# 匹配以这些后缀结尾的任何域名
+- DOMAIN-SUFFIX,ai.com
+- DOMAIN-SUFFIX,algolia.net
+- DOMAIN-SUFFIX,anthropic.com
+- DOMAIN-SUFFIX,api.statsig.com
+- DOMAIN-SUFFIX,auth0.com
+- DOMAIN-SUFFIX,bard.google.com
+- DOMAIN-SUFFIX,chatgpt.com
+- DOMAIN-SUFFIX,chatgpt.livekit.cloud
+- DOMAIN-SUFFIX,claude.ai.com
+- DOMAIN-SUFFIX,client-api.arkoselabs.com
+- DOMAIN-SUFFIX,events.statsigapi.net
+- DOMAIN-SUFFIX,featuregates.org
+- DOMAIN-SUFFIX,gemini.google.com
+- DOMAIN-SUFFIX,host.livekit.cloud
+- DOMAIN-SUFFIX,identrust.com
+- DOMAIN-SUFFIX,intercom.io
+- DOMAIN-SUFFIX,intercomcdn.com
+- DOMAIN-SUFFIX,launchdarkly.com
+- DOMAIN-SUFFIX,makersuite.google.com
+- DOMAIN-SUFFIX,oaistatic.com
+- DOMAIN-SUFFIX,oaiusercontent.com
+- DOMAIN-SUFFIX,observeit.net
+- DOMAIN-SUFFIX,openai.com
+- DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+- DOMAIN-SUFFIX,openaicom.imgix.net
+- DOMAIN-SUFFIX,perplexity.ai
+- DOMAIN-SUFFIX,segment.io
+- DOMAIN-SUFFIX,sentry.io
+- DOMAIN-SUFFIX,stripe.com
+- DOMAIN-SUFFIX,turn.livekit.cloud
+
+# IP 地址段匹配 (IP CIDR)
+- IP-CIDR,24.199.123.28/32,no-resolve
+- IP-CIDR,64.23.132.171/32,no-resolve
+
+# ASN 匹配 (Autonomous System Number)
+- IP-ASN,20473,no-resolve```
+
