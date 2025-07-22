@@ -2,7 +2,7 @@
 # Rule for OpenAI / Bard / Claude
 # De-duplicated and Organized
 #
-
+payload:
 # 域名关键字匹配 (Domain Keyword)
 # 匹配包含这些关键字的任何域名
 - DOMAIN-KEYWORD,anthropic
